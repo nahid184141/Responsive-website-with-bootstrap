@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This page  describe about how to print without margin">
+    <meta name="author" content="Md Nahid Hasan Rabbi">
+  <title>print</title>
+  <link rel="stylesheet" href="print.css">
+</head>
+<body>
+  <header>
+    <h1 class="js-h1">Responsive example -large</h1>
+    <nav class="menu">
+      <div class="width">
+         <a href="Response.html">Home</a></div>
+      <div class="width">
+        <a class="js-print"href="">Print</a>
+      </div>
+      <div class="width">
+        <a href="print.html">Page2</a>
+      </div>
+    </nav>
+  </header>
+   <div class="content">
+     <div class="column">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non suscipit est perferendis animi placeat omnis debitis unde repudiandae beatae itaque optio, voluptatibus iste quos obcaecati eveniet aperiam hic! Accusamus, distinctio.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum atque accusantium in distinctio optio reiciendis soluta odio dignissimos pariatur vel animi itaque, assumenda minus hic dolor veniam, nesciunt nisi facere. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, voluptates. Odit expedita deserunt esse quisquam? Qui nam sint molestiae facilis pariatur maiores. Perspiciatis dolores at iusto molestias praesentium ut voluptatibus.
+
+     </div>
+     <div class="column">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi inventore illum sequi aliquid id corporis quos exercitationem animi officiis et iusto aut, expedita necessitatibus aliquam perferendis odio fugiat voluptatum suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fugit obcaecati nesciunt temporibus id impedit quam eaque reprehenderit distinctio eligendi, ab atque a accusantium quae? Ipsa adipisci fugiat saepe officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quod quos error quasi porro molestias eius ea harum voluptas ipsam sequi eaque explicabo esse illum similique labore, corporis nam dolorum.
+
+     </div>
+   </div>
+  <footer>
+    <p>RS-2020</p>
+  </footer>
+  <script>
+    document.querySelector('.js-print').addEventListener('click',()=>{
+      document.querySelector('.js-h1').innerText='Responsive example - print'
+
+      window.print();
+    });
+  </script>
+  
+</body>
+</html>

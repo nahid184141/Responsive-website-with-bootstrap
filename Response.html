@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This page  describe about how to design responsive page">
+    <meta name="author" content="Md Nahid Hasan Rabbi">
+  <title>Responsive Example</title>
+  <link rel="stylesheet" href="response.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="js-responsive-design">Responsive example - large</h1>
+   
+    <nav class="menu">
+      <a href="Response.html">Home</a>
+      <a href="#">Print</a>
+      <a href="print.html">Page 2</a>
+     </header>
+    </nav>
+    <main>
+      <div class="map">
+        <iframe 
+          src="https://www.openstreetmap.org/export/embed.html?bbox=15.505343377590181%2C51.93590953130495%2C15.508792698383333%2C51.93702576221125&amp;layer=mapnik&amp;marker=51.93646848294978%2C15.507068037986755" 
+          width="100%" 
+          height="95%"
+          frameborder="0"></iframe><a href="https://www.openstreetmap.org/?mlat=51.936468&amp;mlon=15.507068#map=19/51.936468/15.507068" target="_blank">View larger map</a>
+      </div>
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Officiis quia aspernatur 
+          deleniti. Ea dol dol. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi illo blanditiis deserunt. Odio ratione, quod officiis sed quibusdam voluptatum voluptate, rerum quas repudiandae iste, a autem et perferendis pariatur voluptas! Lorem ipsum dolor sit amet consectetur adipisicing elit. A rem animi pariatur optio, dolores ut at quis iste odio suscipit, illo obcaecati, totam ex iure nesciunt necessitatibus minima inventore beatae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, tempora recusandae! Vero, maxime dolores, libero sapiente recusandae non distinctio fugiat natus, aspernatur necessitatibus quidem reiciendis amet sint suscipit cum tempora.
+        </p>
+      </div>
+    </main>
+    <footer>RS.2020</footer>
+  </div>
+  <script>
+    window.addEventListener('resize',()=>{
+      const head=document.querySelector('.js-responsive-design');
+      if(window.innerWidth<=720){
+        head.innerHTML='Responsive example - small';
+      }else{
+        head.innerHTML='Responsive example - large';
+        
+      }
+      
+    });
+  </script>
+</body>
+</html>
